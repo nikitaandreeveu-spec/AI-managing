@@ -106,7 +106,7 @@ function Nav() {
         <div className="flex items-center gap-2">
           <div className="w-6 h-6 rounded bg-blue-700" />
           <span className="font-bold text-blue-900 text-sm tracking-tight">
-            Randstad&nbsp;<span className="text-blue-500 font-normal">AI Pitch</span>
+            Randstad&nbsp;<span className="text-blue-500 font-normal">AI Concept</span>
           </span>
         </div>
 
@@ -625,7 +625,7 @@ function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
           <div className="w-5 h-5 rounded bg-blue-400" />
-          <span className="text-blue-300 text-sm font-medium">Randstad AI Pitch · 2025</span>
+          <span className="text-blue-300 text-sm font-medium">From Intuition to Intelligence · 2025</span>
         </div>
         <p className="text-blue-500 text-sm">
           Managing Business with AI · Remco Kuiken · Polle van Berlo · Nikita Andreev
