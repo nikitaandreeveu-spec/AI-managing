@@ -215,12 +215,25 @@ function Hero() {
 
         {/* Team */}
         <div className="flex flex-wrap gap-3">
-          {['Remco Kuiken', 'Polle van Berlo', 'Nikita Andreev'].map((name) => (
+          {[
+            { name: 'Remco Kuiken', photo: '/avatars/remco.jpg' },
+            { name: 'Polle van Berlo', photo: '/avatars/polle.jpg' },
+            { name: 'Nikita Andreev', photo: '/avatars/nikita.jpg' },
+          ].map(({ name, photo }) => (
             <div
               key={name}
               className="flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2"
             >
-              <div className="w-7 h-7 rounded-full bg-blue-400/40 flex items-center justify-center">
+              <img
+                src={photo}
+                alt={name}
+                className="w-8 h-8 rounded-full object-cover ring-2 ring-white/30"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none'
+                  e.currentTarget.nextSibling.style.display = 'flex'
+                }}
+              />
+              <div className="w-8 h-8 rounded-full bg-blue-400/40 items-center justify-center hidden">
                 <span className="text-white text-xs font-bold">{name[0]}</span>
               </div>
               <span className="text-white text-sm font-medium">{name}</span>
